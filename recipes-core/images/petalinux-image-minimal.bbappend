@@ -68,8 +68,6 @@ IMAGE_INSTALL:append:zynqmp = "\
 	packagegroup-petalinux-gstreamer \
 	packagegroup-petalinux-lmsensors \
 	packagegroup-petalinux-matchbox \
-	packagegroup-petalinux-opencv \
-	packagegroup-petalinux-opencv-dev \
 	packagegroup-petalinux-python-modules \
 	packagegroup-petalinux-self-hosted \
 	packagegroup-petalinux-v4lutils \
@@ -122,7 +120,6 @@ IMAGE_INSTALL:append:u96v2-sbc = "\
 IMAGE_INSTALL:append:uz = "\
 	blinky \
 	libdrm \
-	libdrm-kms \
 	libdrm-tests \
 	libstdc++ \
 	libv4l \
@@ -170,7 +167,6 @@ IMAGE_INSTALL:append:pz = "\
 IMAGE_INSTALL:append:zub1cg-sbc = "\
 	blinky \
 	libdrm \
-	libdrm-kms \
 	libdrm-tests \
 	libstdc++ \
 	libv4l \

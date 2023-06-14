@@ -5,6 +5,7 @@
 
 MACHINEOVERRIDES =. "zub1cg:zub1cg-sbc:"
 
+HDF_MACHINE = "zub1cg-sbc-base"
 require conf/machine/include/soc-zynqmp.inc
 require conf/machine/include/machine-xilinx-default.inc
 
@@ -25,7 +26,7 @@ PMU_FIRMWARE_DEPLOY_DIR ?= "${TOPDIR}/pmutmp/deploy/images/zynqmp-pmu"
 EXTRA_IMAGEDEPENDS += " \
 		arm-trusted-firmware \
 		virtual/bootloader \
-		u-boot-zynq-scr \
+		u-boot-xlnx-scr \
 		virtual/fsbl \
 		virtual/pmu-firmware \
 		avnet-boot-scr \
@@ -37,7 +38,7 @@ IMAGE_BOOT_FILES = " \
                     boot.scr \
                     fitImage;image.ub \
                     "
-
+WKS_FILES = "petalinux-image-minimal.wks"
 # deploy avnet-boot-scr scripts in images/linux/ folder
 EXTRA_FILESLIST:append = " ${DEPLOY_DIR_IMAGE}/avnet-boot/:avnet-boot/ "
 
